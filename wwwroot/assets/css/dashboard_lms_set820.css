@@ -1,0 +1,114 @@
+.card-curso{
+    color: #25233b !important;
+    position: relative;;
+    z-index: 2;
+    margin-bottom: 10px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+.cont-card-curso{
+    padding: 0.5rem;
+}
+.titulo-card-curso a{
+    color: #3a4368;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px !important;
+}
+.titulo-card-curso a:hover{
+    color: #3464e0;
+    text-decoration: none;
+}
+.barra-progres{
+    padding-top: 10px;
+}
+.btn-overlay-curso{
+    padding: 0.25rem !important;
+    /*position: relative;*/
+}
+.card-link {
+    position: relative;
+}
+.link-aula a{
+    color: #212529;
+    text-decoration: none;
+}
+.link-aula a:hover{
+    color: #3464e0;
+    text-decoration: none;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #036;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav link-aula a {
+    padding: 8px 8px 8px 12px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181 !important;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav link-aula a:hover {
+    color: #3464e0 !important;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.tit-car-aside{
+    background-color: #248afd !important;
+    color: #fff !important;
+    border-radius: 0rem;
+    padding: 0rem;
+}
+.tit-car-aside a:hover{
+    color: #f1f3f4 !important;
+}
+.card-borda{
+    border-radius: 0rem;
+}
+.tit-perg{
+    color: #292c2d !important;
+    font-size: 22px;
+}
+.data-perg{
+    color: #4d5052 !important;
+    font-size: 14px;
+}
+.revisao-aula{
+    font-size: 14px;
+}
+.revisao-aula a{
+    text-decoration: none;
+    color: #4d5052 !important;
+}

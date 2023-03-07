@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title> @ViewData["Title"] - EMPRESA</title>
+      
+      <link rel="icon" type="image/x-icon" href="~/favicon.ico" asp-append-version="true" />
+      <link rel="shortcut icon" href="~/favicon.ico" asp-append-version="true" />
+
+      <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" >
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" asp-append-version="true"></script>
+      <link rel="stylesheet" href="~/assets/css/fontawesome.min.css" asp-append-version="true" />
+      <link rel="stylesheet" href="~/assets/css/dashboard_ago320.css" asp-append-version="true" />
+      <link rel="stylesheet" href="~/assets/css/dashboard_lms_set820.css" asp-append-version="true" /> 
+
+      @RenderSection("styles", false)
+
+   </head>
+   <body>
+
+    <partial name="Shared/NavBarTopPartial"/>
+
+      <!-- corpo da pagina -->
+      <div class="d-flex">
+
+        <partial name="Shared/NavSidebarPartial"/>
+
+         <!-- conteudo da pagina -->
+         <div class="content p-1">
+                @RenderBody()
+         </div> <!-- conteudo da pagina fim -->
+
+      </div><!-- corpo da pagina fim-->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script src="~/assets/js/dashboard.js"></script>
+      <script src="~/assets/js/dashboard-lms-set119.js"></script>
+      
+      @RenderSection("scripts", false)
+
+   </body>
+</html>

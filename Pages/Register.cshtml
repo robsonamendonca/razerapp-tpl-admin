@@ -1,0 +1,30 @@
+@page "~/Cadastrar"
+@model MyRazorApp.Pages.Pages_Register
+@{
+    Layout = "Shared/_LayoutAuth.cshtml";
+    
+    ViewData["Title"] = "Cadastro";
+}
+
+         <form class="form-signin" method="POST" action="">
+            <img class="mb-4" src="./assets/img/seu_logo_aqui.png" alt="Celke" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Novo Usuário</h1>
+                    <div class="form-group">
+                <label>Nome</label>
+                <input name="nome" type="text" class="form-control" placeholder="Digite o nome completo" value=""> 
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input name="email" type="text" class="form-control" placeholder="Digite o seu melhor e-mail" value=""> 
+            </div>
+            <div class="form-group">
+                <label>Usuário</label>
+                <input name="usuario" type="text" class="form-control" placeholder="Digite o usuário" value=""> 
+            </div>
+            <div class="form-group">
+                <label>Senha</label>
+                <input name="senha" type="password" class="form-control" placeholder="Digite a senha">
+            </div>
+            <input name="CadUserLogin" type="submit" class="btn btn-lg btn-success btn-block" value="Cadastrar">
+            <p class="text-center"><a asp-page="Login">Clique aqui</a> para acessar</p>
+        </form>

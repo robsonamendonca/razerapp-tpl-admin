@@ -1,0 +1,41 @@
+@page "~/Usuarios"
+@model MyRazorApp.Pages.Pages_Users
+@{
+    ViewData["Title"] = "Usuários";
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/assets/css/DataTable_style.css">
+}         
+
+<div class="list-group-item">
+    <div class="d-flex">
+        <div class="mr-auto p-2">
+            <h2 class="display-4 titulo">Usuários</h2>
+        </div>
+    </div>
+    <hr>
+    <table class="table"></table>
+</div>
+
+
+@section scripts {
+    <script src="~/assets/js/datatable_umd.js" asp-append-version="true"></script>
+        <script>
+            fetch("db.json").then(
+                response => response.json()
+            ).then(
+                data => {
+                    if (!data.length) {
+                        return
+                    }
+                    new window.simpleDatatables.DataTable(".table", {
+                        data: {
+                            headings: Object.keys(data[0]),
+                            data: data.map(item => Object.values(item))
+                        }
+                    })
+                }
+            )
+        </script>    
+}         

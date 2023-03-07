@@ -1,0 +1,50 @@
+@page "~/Entrar"
+@model MyRazorApp.Pages.Pages_Login
+@{
+    Layout = "Shared/_LayoutAuth.cshtml";
+    
+    ViewData["Title"] = "Área Restrita";
+}
+
+         <form class="form-signin" id="signin" method="POST" action="">
+            <img class="mb-4" src="~/assets/img/seu_logo_aqui.png" alt="Celke"  width="72"  height="72"   />
+            <h1 class="h3 mb-3 font-weight-normal">Área Restrita</h1>
+            <div class="form-group">
+               <label>Usuário</label>
+               <input
+                  name="usuario"
+                  type="text"
+                  class="form-control"
+                  placeholder="Digite o usuário"
+                  value=""
+                  />
+            </div>
+            <div class="form-group">
+               <label>Senha</label>
+               <input
+                  name="senha"
+                  type="password"
+                  class="form-control"
+                  placeholder="Digite a senha"
+                  />
+            </div>
+            <input
+               name="SendLogin"
+               type="submit"
+               class="btn btn-lg btn-primary btn-block"
+               value="Acessar"
+               />
+            <p class="text-center">
+               <a asp-page="Register">
+               Cadastrar
+               </a>
+               -
+               <a asp-page="Recover">
+               Esqueceu a senha?
+               </a>
+            </p>
+         </form>
+
+@section scripts {
+    <script src="~/assets/js/site.js" asp-append-version="true"></script>
+}         
